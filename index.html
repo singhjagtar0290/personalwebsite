@@ -98,8 +98,59 @@
                 </div>
             </div>
 			<div class="row">
-                <div class="col-lg-12" >
-                    <h3 style="text-align:center">Working with Private Projects</h3>
+                <div class="col-md-12" >
+                    <h3 style="text-align:center">Projects</h3>
+                </div>
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="project1.html">
+                      <img src="" alt="">
+                      <h3>Servify</h3>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="project2.html">
+                      <img src="" alt="">
+                      <h3>Bitstreet Technologies</h3>
+                    </a>
+                  </div>
+
+                  <div class="col-md-4">
+                    <a href="project3.html">
+                      <img src="" alt="">
+                      <h3>Zelican Infotech</h3>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="project4.html">
+                      <img src="" alt="">
+                      <h3>Go Holidays</h3>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="project5.html">
+                      <img src="" alt="">
+                      <h3>CatersDesk</h3>
+                    </a>
+                  </div>
+                  <div class="col-md-4">
+                    <a href="project6.html">
+                      <img src="" alt="">
+                      <h3>Ulka Foundation</h3>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-4">
+                    <a href="project7.html">
+                      <img src="" alt="">
+                      <h3>RPG Blizzard</h3>
+                    </a>
+                  </div>
                 </div>
             <!--<div class="row">
                 <div class="col-sm-4 portfolio-item">
@@ -219,7 +270,7 @@
                 <div class="col-lg-4">
                     <p>
 					GIT GULP SASS LESS BOOTSTRAP YII
-					
+
 					</p>
                 </div>
             </div>
@@ -240,14 +291,14 @@
                     <p>
 					Zelican InfoTech ( 1 April  2014 )<br>
 					(Serving Notice Period till 9th September looking for better opportunity)<br>
-					Working as Front End Engineer 
+					Working as Front End Engineer
 					</p>
 					<p>
 					MXM Tech ( 1 June 2013 to March 31 2014 )<br>
 					Worked as Web Developer
 					</p>
                 </div>
-               
+
             </div>
         </div>
     </section>
@@ -329,7 +380,7 @@
                             <li>
                                 <a href="https://in.linkedin.com/in/singhjagtar0290" target="_blank" class="btn-social btn-outline"><i class="fa fa-fw fa-linkedin"></i></a>
                             </li>
-                          
+
                         </ul>
                     </div>
                     <div class="footer-col col-md-4">
@@ -582,6 +633,8 @@
         </div>
     </div>
 
+
+
     <!-- jQuery -->
     <script src="vendor/jquery/jquery.min.js"></script>
 
@@ -606,8 +659,24 @@
   ga('create', 'UA-81045244-1', 'auto');
   ga('send', 'pageview');
 
+  function readURL(input) {
+        if (input.files && input.files[0]) {
+            var reader = new FileReader();
+
+            reader.onload = function (e) {
+                $('#blah').attr('src', e.target.result);
+            }
+
+            reader.readAsDataURL(input.files[0]);
+        }
+    }
+
+    $("#imgInp").change(function(){
+        readURL(this);
+    });
+
 </script>
-	
+
 </body>
 
 </html>
